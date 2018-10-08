@@ -1,89 +1,126 @@
 <!DOCTYPE html>
-<html>
 
-<!-- artwork page for personal website -->
+<html lang="en">
+
+<!-- Index page for personal website -->
 
 <!-- head section -->
 
 <head>
-  <title>Art</title>
-  <link rel="icon" href="images/logo1.jpg">
+  <title>Index</title>
+  <link rel="icon" href="img/logo1.jpg">
+
+  <!-- Bootstrap CSS -->
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Josefin+Sans|Merriweather|Montserrat" rel="stylesheet">
+
   <link rel="stylesheet" href="css/styles.css">
+
+  <meta name="description" content="Personal Site for Roy Xu">
+  <meta name="author" content="Roy Xu">
+  <meta name="keywords" content="resume, projects, software engineer, design, mobile development">
+  <meta name="copyright" content="Roy Xu 2018 and beyond...">
+
+  <title>Roy Xu // Welcome</title>
+
 </head>
 
-<!-- body section -->
 
 <body>
-  <div id="page">
-    <div class="menu-holder">
+  <!-- Page Content -->
+  <div class="container">
+    <div class="modal-body row">
 
-      <!-- top header -->
-      <nav id="header-main-menu">
-        <ul class="main-menu ">
-          <li>
-            <a href="artwork.html">Artwork</a>
-          </li>
-          <li>
-            <a href="index.html">Home</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+      <!-- Top navigation -->
+      <div class="col-md-10">
+        <h1>
+          <a href="index.html">Roy Xu</a>
+          <span>// Artwork</span>
+        </h1>
+      </div>
 
-    <br/>
+      <div class="col-md-2" align="right">
+        <a href="index.html"><i class="fas fa-home" aria-hidden="true"></i> Home</a>
+        <br>
+        <a href="projects.html"><i class="fas fa-briefcase"></i> Projects</a>
+        <br>
+        <a href="roy-xu-resume_s.pdf"><i class="fas fa-file-pdf"></i> Resume</a>
+        <br>
+        <a href="calendar.html"><i class="far fa-calendar-alt"></i> Calendar</a>
+        <br>
+      </div>
 
-    <!-- artwork section -->
-    <h1 class= "center-text"> Artwork </h1>
-    <div class="center-mid-3">
-      <div class="image">
-        <img id="woman" src="images/woman.jpg" alt="woman" title="woman" />
+      <div class="col-md-12">
+        <hr>
       </div>
-      <div class="image">
-        <img id="feast" src="images/Feast.jpg" alt="feast" title="feast" />
-      <div class="image"
-        <img id="meat" src="images/meat.jpg" alt="meat" title="meat" />
-      </div>
-      </div>
-      <div class="image">
-        <img id="teapot" src="images/Teapot.jpg" alt="teapot" title="teapot" />
-      </div>
-      <div class="image">
-        <img id="beyond" src="images/Beyond.jpg" alt="beyond" title="beyond" />
-      </div>
-      <div class="image">
-        <img id="sd" src="images/sd.jpg" alt="sd" title="sd" />
-      </div>
-      <div class="image">
-        <img id="ssdf" src="images/ssdf.jpg" alt="ssdf" title="ssdf" />
-      </div>
-      <div class="image">
-        <img id="gfdg" src="images/gfdg.jpg" alt="gfdg" title="gfdg" />
-      </div>
-      <div class="image">
-        <img id="citycorner" src="images/citycorner.jpg" alt="citycorner" title="citycorner" />
-      </div>
-    </div>
 
 
-      <!-- footer -->
-      <footer class="footer">
-        <div>
-          <p> © Roy Xu | 2018 </p>
-          <div class="socialmedia">
-            <a href="https://twitter.com/BarackObama" target="_blank">
-                            <span class="twitter"> <img class= "smlogo" src="images/f081.png"/></span>
-                        </a>
-            <a href="https://www.facebook.com/royxu1029" target="_blank">
-                            <span class="facebook"> <img class= "smlogo" src="images/f082.png"/></span>
-                        </a>
-            <a href="https://www.instagram.com/royhxu" target="_blank">
-                            <span class="fa fa-pinterest-p"> <img class= "smlogo" src="images/f083.png"/> </span>
-                        </a>
-          </div>
+        <div class="col-md-6">
+          <img class="art" src="img/woman.jpg" alt="woman" title="woman" />
         </div>
-      </footer>
+        <div class="col-md-5">
+          <img class="art" src="img/feast.jpg" alt="feast" title="feast" />
+        </div>
+        <div class="col-md-11">
+          <img class="art" src="img/citycorner.jpg" alt="citycorner" title="citycorner" />
+        </div>
+        <div class="col-md-5">
+          <img class="art" src="img/teapot.jpg" alt="teapot" title="teapot" />
+        </div>
+        <div class="col-md-6">
+          <img class="art" src="img/meat.jpg" alt="meat" title="meat" />
+        </div>
+        <div class="col-md-3">
+          <img class="art" src="img/1.jpg" alt="1" title="1" />
+        </div>
+        <div class="col-md-3">
+          <img class="art" src="img/2.jpg" alt="2" title="2" />
+        </div>
+        <div class="col-md-3">
+          <img class="art" src="img/3.jpg" alt="3" title="3" />
+        </div>
+
+
+      <div class="col-md-12">
+        <hr>
+      </div>
 
     </div>
+  </div>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div>
+      <div class="socialmedia">
+        <a href="https://github.com/royxuhan" target="_blank">
+          <span class="github"> <img class="smlogo" src="img/socialicons/github.png" /></span>
+        </a>
+        <a href="https://www.facebook.com/royxu1029" target="_blank">
+          <span class="facebook"> <img class="smlogo" src="img/socialicons/facebook.png" /></span>
+        </a>
+        <a href="https://www.linkedin.com/in/royxu1029/" target="_blank">
+          <span class="linkedin"> <img class="smlogo" src="img/socialicons/linkedin.png" /> </span>
+        </a>
+        <a href="mailto:royxuhan@gmail.com" target="_blank">
+          <span class="email"> <img class="smlogo" src="img/socialicons/email.png" /> </span>
+        </a>
+        <br><br>
+        <p id=copyright> © Roy Xu | 2018 </p>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
