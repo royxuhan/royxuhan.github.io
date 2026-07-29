@@ -235,7 +235,7 @@
 
   /* ---- magnetic links ---- */
   if (finePointer && !reduce) {
-    document.querySelectorAll(".nav__links a, .contact__links a, .hero__scroll").forEach(function (el) {
+    document.querySelectorAll(".nav__links a, .hero__scroll").forEach(function (el) {
       el.addEventListener("mousemove", function (e) {
         var r = el.getBoundingClientRect();
         var dx = e.clientX - (r.left + r.width / 2);
@@ -246,20 +246,25 @@
     });
   }
 
-  /* ---- gallery focus dim ---- */
-  var galleryEl = document.querySelector(".gallery");
-  if (galleryEl && finePointer) {
-    var arts = Array.prototype.slice.call(galleryEl.querySelectorAll(".art"));
-    galleryEl.addEventListener("mouseover", function (e) {
-      var a = e.target.closest && e.target.closest(".art");
-      if (!a) return;
-      galleryEl.classList.add("is-focusing");
-      arts.forEach(function (x) { x.classList.toggle("is-focused", x === a); });
-    });
-    galleryEl.addEventListener("mouseleave", function () {
-      galleryEl.classList.remove("is-focusing");
-      arts.forEach(function (x) { x.classList.remove("is-focused"); });
-    });
+  /* ---- copy email to clipboard ---- */
+  var copyBtn = document.querySelector(".contact__copy");
+  if (copyBtn) {
+    if (!navigator.clipboard) {
+      copyBtn.style.display = "none";
+    } else {
+      var copyTimer;
+      copyBtn.addEventListener("click", function () {
+        navigator.clipboard.writeText(copyBtn.getAttribute("data-copy") || "").then(function () {
+          copyBtn.classList.add("copied");
+          copyBtn.setAttribute("aria-label", "Email copied");
+          clearTimeout(copyTimer);
+          copyTimer = setTimeout(function () {
+            copyBtn.classList.remove("copied");
+            copyBtn.setAttribute("aria-label", "Copy email address");
+          }, 1800);
+        }).catch(function () {});
+      });
+    }
   }
 
   /* ---- lightbox ---- */
