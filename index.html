@@ -4,13 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Roy Xu</title>
-  <meta name="description" content="Roy Xu is a software engineer in San Francisco who draws. A small collection of graphite, charcoal, ink, and watercolor.">
+  <meta name="description" content="A small collection of graphite, charcoal, ink, and watercolor.">
   <meta name="theme-color" content="#0a0a0c">
   <link rel="canonical" href="https://royxuhan.github.io/">
 
   <!-- Open Graph -->
   <meta property="og:title" content="Roy Xu">
-  <meta property="og:description" content="A software engineer in San Francisco who draws. A small collection of work on paper.">
+  <meta property="og:description" content="A small collection of graphite, charcoal, ink, and watercolor.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://royxuhan.github.io/">
   <meta property="og:image" content="https://royxuhan.github.io/assets/img/og.jpg">
@@ -20,7 +20,7 @@
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Roy Xu">
-  <meta name="twitter:description" content="A software engineer in San Francisco who draws. A small collection of work on paper.">
+  <meta name="twitter:description" content="A small collection of graphite, charcoal, ink, and watercolor.">
   <meta name="twitter:image" content="https://royxuhan.github.io/assets/img/og.jpg">
 
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -65,7 +65,7 @@
     <section class="hero" id="hero">
       <canvas class="hero__canvas" aria-hidden="true"></canvas>
       <div class="hero__inner">
-        <p class="hero__kicker">Software Engineer &nbsp;·&nbsp; San Francisco</p>
+        <p class="hero__kicker">San Francisco</p>
         <h1 class="hero__name">Roy&nbsp;Xu</h1>
         <p class="hero__line">A home for the drawings and paintings I make away from the keyboard.</p>
       </div>
@@ -110,11 +110,11 @@
       <div class="work__head">
         <p class="label reveal">Works on paper</p>
         <h2 class="work__title reveal">The Gallery</h2>
-        <p class="work__sub reveal">Graphite, charcoal, ink, and watercolor. Click any piece to look closer.</p>
+        <!-- <p class="work__sub reveal">Graphite, charcoal, ink, and watercolor. Click any piece to look closer.</p> -->
       </div>
 
       <div class="gallery">
-        <!-- 1 · feature (whole panorama, full-bleed) -->
+        <!-- feature: whole panorama, full-bleed -->
         <figure class="art art--feature reveal" data-full="assets/img/art/full/1.jpg" data-title="The Crossing" data-medium="Graphite on paper">
           <button class="art__open" type="button" aria-label="View “The Crossing” enlarged">
             <span class="art__frame">
@@ -124,144 +124,137 @@
           <figcaption class="art__cap"><span class="art__i">01</span><span class="art__t">The Crossing</span><span class="art__m">Graphite on paper</span></figcaption>
         </figure>
 
-        <!-- 2 + 3 -->
-        <div class="pair reveal">
-          <figure class="art" data-full="assets/img/art/full/2.jpg" data-title="Elder" data-medium="Charcoal on paper">
-            <button class="art__open" type="button" aria-label="View “Elder” enlarged">
-              <span class="art__frame">
-                <img src="assets/img/art/thumb/2.jpg" alt="Charcoal portrait of an older woman with weathered features and long hair" width="1872" height="2376" loading="lazy" decoding="async">
-              </span>
-            </button>
-            <figcaption class="art__cap"><span class="art__i">02</span><span class="art__t">Elder</span><span class="art__m">Charcoal on paper</span></figcaption>
-          </figure>
-          <figure class="art" data-full="assets/img/art/full/3.jpg" data-title="Roses &amp; Fruit" data-medium="Oil on paper">
-            <button class="art__open" type="button" aria-label="View “Roses and Fruit” enlarged">
-              <span class="art__frame">
-                <img src="assets/img/art/thumb/3.jpg" alt="Vibrant still-life painting of roses, fruit, and a glass of wine on a bright tablecloth" width="1941" height="2849" loading="lazy" decoding="async">
-              </span>
-            </button>
-            <figcaption class="art__cap"><span class="art__i">03</span><span class="art__t">Roses &amp; Fruit</span><span class="art__m">Oil on paper</span></figcaption>
-          </figure>
-        </div>
+        <!-- two height-balanced columns -->
+        <div class="masonry">
+          <div class="masonry__col">
+            <figure class="art reveal" data-full="assets/img/art/full/2.jpg" data-title="Elder" data-medium="Charcoal on paper">
+              <button class="art__open" type="button" aria-label="View “Elder” enlarged">
+                <span class="art__frame">
+                  <img src="assets/img/art/thumb/2.jpg" alt="Charcoal portrait of an older woman with weathered features and long hair" width="1872" height="2376" loading="lazy" decoding="async">
+                </span>
+              </button>
+              <figcaption class="art__cap"><span class="art__i">02</span><span class="art__t">Elder</span><span class="art__m">Charcoal on paper</span></figcaption>
+            </figure>
 
-        <!-- 5 -->
-        <figure class="art art--portrait reveal" data-full="assets/img/art/full/5.jpg" data-title="Skyward" data-medium="Graphite on paper">
-          <button class="art__open" type="button" aria-label="View “Skyward” enlarged">
-            <span class="art__frame">
-              <img src="assets/img/art/thumb/5.jpg" alt="Graphite drawing of a figure gazing upward against a backdrop of city towers" width="2617" height="3124" loading="lazy" decoding="async">
-            </span>
-          </button>
-          <figcaption class="art__cap"><span class="art__i">04</span><span class="art__t">Skyward</span><span class="art__m">Graphite on paper</span></figcaption>
-        </figure>
+            <figure class="art reveal" data-full="assets/img/art/full/7.jpg" data-title="Slice" data-medium="Colored pencil on paper">
+              <button class="art__open" type="button" aria-label="View “Slice” enlarged">
+                <span class="art__frame">
+                  <img src="assets/img/art/thumb/7.jpg" alt="Colored-pencil drawing of a loaded pizza with one slice pulled away" width="2634" height="1890" loading="lazy" decoding="async">
+                </span>
+              </button>
+              <figcaption class="art__cap"><span class="art__i">03</span><span class="art__t">Slice</span><span class="art__m">Colored pencil on paper</span></figcaption>
+            </figure>
 
-        <!-- 7 -->
-        <figure class="art art--wide reveal" data-full="assets/img/art/full/7.jpg" data-title="Slice" data-medium="Colored pencil on paper">
-          <button class="art__open" type="button" aria-label="View “Slice” enlarged">
-            <span class="art__frame">
-              <img src="assets/img/art/thumb/7.jpg" alt="Colored-pencil drawing of a loaded pizza with one slice pulled away" width="2634" height="1890" loading="lazy" decoding="async">
-            </span>
-          </button>
-          <figcaption class="art__cap"><span class="art__i">05</span><span class="art__t">Slice</span><span class="art__m">Colored pencil on paper</span></figcaption>
-        </figure>
+            <figure class="art reveal" data-full="assets/img/art/full/10.jpg" data-title="Rooted" data-medium="Ink on paper">
+              <button class="art__open" type="button" aria-label="View “Rooted” enlarged">
+                <span class="art__frame">
+                  <img src="assets/img/art/thumb/10.jpg" alt="Ink drawing of a person's silhouette filled with bare branches" width="1798" height="2653" loading="lazy" decoding="async">
+                </span>
+              </button>
+              <figcaption class="art__cap"><span class="art__i">04</span><span class="art__t">Rooted</span><span class="art__m">Ink on paper</span></figcaption>
+            </figure>
 
-        <!-- 12 + 13 -->
-        <div class="pair reveal">
-          <figure class="art" data-full="assets/img/art/full/12.jpg" data-title="Dissolve" data-medium="Watercolor on paper">
-            <button class="art__open" type="button" aria-label="View “Dissolve” enlarged">
-              <span class="art__frame">
-                <img src="assets/img/art/thumb/12.jpg" alt="Expressive watercolor face with dripping blue, purple, and yellow pigment" width="2757" height="3471" loading="lazy" decoding="async">
-              </span>
-            </button>
-            <figcaption class="art__cap"><span class="art__i">06</span><span class="art__t">Dissolve</span><span class="art__m">Watercolor on paper</span></figcaption>
-          </figure>
-          <figure class="art" data-full="assets/img/art/full/13.jpg" data-title="Violet" data-medium="Watercolor on paper">
-            <button class="art__open" type="button" aria-label="View “Violet” enlarged">
-              <span class="art__frame">
-                <img src="assets/img/art/thumb/13.jpg" alt="Watercolor portrait with a bruised violet eye and warm skin tones" width="2962" height="3210" loading="lazy" decoding="async">
-              </span>
-            </button>
-            <figcaption class="art__cap"><span class="art__i">07</span><span class="art__t">Violet</span><span class="art__m">Watercolor on paper</span></figcaption>
-          </figure>
-        </div>
+            <figure class="art reveal" data-full="assets/img/art/full/12.jpg" data-title="Dissolve" data-medium="Watercolor on paper">
+              <button class="art__open" type="button" aria-label="View “Dissolve” enlarged">
+                <span class="art__frame">
+                  <img src="assets/img/art/thumb/12.jpg" alt="Expressive watercolor face with dripping blue, purple, and yellow pigment" width="2757" height="3471" loading="lazy" decoding="async">
+                </span>
+              </button>
+              <figcaption class="art__cap"><span class="art__i">05</span><span class="art__t">Dissolve</span><span class="art__m">Watercolor on paper</span></figcaption>
+            </figure>
 
-        <!-- 10 -->
-        <figure class="art art--portrait reveal" data-full="assets/img/art/full/10.jpg" data-title="Rooted" data-medium="Ink on paper">
-          <button class="art__open" type="button" aria-label="View “Rooted” enlarged">
-            <span class="art__frame">
-              <img src="assets/img/art/thumb/10.jpg" alt="Ink drawing of a person's silhouette filled with bare branches" width="1798" height="2653" loading="lazy" decoding="async">
-            </span>
-          </button>
-          <figcaption class="art__cap"><span class="art__i">08</span><span class="art__t">Rooted</span><span class="art__m">Ink on paper</span></figcaption>
-        </figure>
+            <figure class="art reveal" data-full="assets/img/art/full/4.jpg" data-title="Teapot" data-medium="Graphite on paper">
+              <button class="art__open" type="button" aria-label="View “Teapot” enlarged">
+                <span class="art__frame">
+                  <img src="assets/img/art/thumb/4.jpg" alt="Graphite still life of a ceramic teapot resting on draped cloth" width="2234" height="3161" loading="lazy" decoding="async">
+                </span>
+              </button>
+              <figcaption class="art__cap"><span class="art__i">06</span><span class="art__t">Teapot</span><span class="art__m">Graphite on paper</span></figcaption>
+            </figure>
 
-        <!-- 6 -->
-        <figure class="art art--wide reveal" data-full="assets/img/art/full/6.jpg" data-title="Club Sandwich" data-medium="Graphite on paper">
-          <button class="art__open" type="button" aria-label="View “Club Sandwich” enlarged">
-            <span class="art__frame">
-              <img src="assets/img/art/thumb/6.jpg" alt="Detailed graphite drawing of a club sandwich on a plate" width="2660" height="1868" loading="lazy" decoding="async">
-            </span>
-          </button>
-          <figcaption class="art__cap"><span class="art__i">09</span><span class="art__t">Club Sandwich</span><span class="art__m">Graphite on paper</span></figcaption>
-        </figure>
+            <figure class="art reveal" data-full="assets/img/art/full/8.jpg" data-title="Wildcard" data-medium="Colored pencil &amp; ink on paper">
+              <button class="art__open" type="button" aria-label="View “Wildcard” enlarged">
+                <span class="art__frame">
+                  <img src="assets/img/art/thumb/8.jpg" alt="Colorful abstract collage with a cubist face, a joker card, and geometric shapes" width="842" height="1018" loading="lazy" decoding="async">
+                </span>
+              </button>
+              <figcaption class="art__cap"><span class="art__i">07</span><span class="art__t">Wildcard</span><span class="art__m">Colored pencil &amp; ink on paper</span></figcaption>
+            </figure>
 
-        <!-- 4 + 9 -->
-        <div class="pair reveal">
-          <figure class="art" data-full="assets/img/art/full/4.jpg" data-title="Teapot" data-medium="Graphite on paper">
-            <button class="art__open" type="button" aria-label="View “Teapot” enlarged">
-              <span class="art__frame">
-                <img src="assets/img/art/thumb/4.jpg" alt="Graphite still life of a ceramic teapot resting on draped cloth" width="2234" height="3161" loading="lazy" decoding="async">
-              </span>
-            </button>
-            <figcaption class="art__cap"><span class="art__i">10</span><span class="art__t">Teapot</span><span class="art__m">Graphite on paper</span></figcaption>
-          </figure>
-          <figure class="art" data-full="assets/img/art/full/9.jpg" data-title="Migration" data-medium="Ink on paper">
-            <button class="art__open" type="button" aria-label="View “Migration” enlarged">
-              <span class="art__frame">
-                <img src="assets/img/art/thumb/9.jpg" alt="Ink drawing of a tree whose branches form the shape of a bird in flight" width="1976" height="2795" loading="lazy" decoding="async">
-              </span>
-            </button>
-            <figcaption class="art__cap"><span class="art__i">11</span><span class="art__t">Migration</span><span class="art__m">Ink on paper</span></figcaption>
-          </figure>
-        </div>
+            <figure class="art reveal" data-full="assets/img/art/full/11.jpg" data-title="Field Lines" data-medium="Ink on paper">
+              <button class="art__open" type="button" aria-label="View “Field Lines” enlarged">
+                <span class="art__frame">
+                  <img src="assets/img/art/thumb/11.jpg" alt="Abstract ink drawing of intersecting lines, dots, and radiating bursts" width="729" height="530" loading="lazy" decoding="async">
+                </span>
+              </button>
+              <figcaption class="art__cap"><span class="art__i">08</span><span class="art__t">Field Lines</span><span class="art__m">Ink on paper</span></figcaption>
+            </figure>
+          </div>
 
-        <!-- 14 + 15 -->
-        <div class="pair reveal">
-          <figure class="art" data-full="assets/img/art/full/14.jpg" data-title="Mourning" data-medium="Watercolor on paper">
-            <button class="art__open" type="button" aria-label="View “Mourning” enlarged">
-              <span class="art__frame">
-                <img src="assets/img/art/thumb/14.jpg" alt="Watercolor face with violet tears streaming from both eyes" width="2658" height="3017" loading="lazy" decoding="async">
-              </span>
-            </button>
-            <figcaption class="art__cap"><span class="art__i">12</span><span class="art__t">Mourning</span><span class="art__m">Watercolor on paper</span></figcaption>
-          </figure>
-          <figure class="art" data-full="assets/img/art/full/15.jpg" data-title="Wildcard" data-medium="Colored pencil &amp; ink on paper">
-            <button class="art__open" type="button" aria-label="View “Wildcard” enlarged">
-              <span class="art__frame">
-                <img src="assets/img/art/thumb/15.jpg" alt="Colorful abstract collage with a cubist face, a joker card, and geometric shapes" width="2402" height="3157" loading="lazy" decoding="async">
-              </span>
-            </button>
-            <figcaption class="art__cap"><span class="art__i">13</span><span class="art__t">Wildcard</span><span class="art__m">Colored pencil &amp; ink on paper</span></figcaption>
-          </figure>
-        </div>
+          <div class="masonry__col">
+            <figure class="art reveal" data-full="assets/img/art/full/3.jpg" data-title="Roses &amp; Fruit" data-medium="Oil on paper">
+              <button class="art__open" type="button" aria-label="View “Roses and Fruit” enlarged">
+                <span class="art__frame">
+                  <img src="assets/img/art/thumb/3.jpg" alt="Vibrant still-life painting of roses, fruit, and a glass of wine on a bright tablecloth" width="1941" height="2849" loading="lazy" decoding="async">
+                </span>
+              </button>
+              <figcaption class="art__cap"><span class="art__i">09</span><span class="art__t">Roses &amp; Fruit</span><span class="art__m">Oil on paper</span></figcaption>
+            </figure>
 
-        <!-- 8 + 11 -->
-        <div class="pair reveal">
-          <figure class="art" data-full="assets/img/art/full/8.jpg" data-title="Rouge" data-medium="Watercolor on paper">
-            <button class="art__open" type="button" aria-label="View “Rouge” enlarged">
-              <span class="art__frame">
-                <img src="assets/img/art/thumb/8.jpg" alt="Watercolor portrait of a face with red lips and a hand raised to the mouth" width="842" height="1018" loading="lazy" decoding="async">
-              </span>
-            </button>
-            <figcaption class="art__cap"><span class="art__i">14</span><span class="art__t">Rouge</span><span class="art__m">Watercolor on paper</span></figcaption>
-          </figure>
-          <figure class="art" data-full="assets/img/art/full/11.jpg" data-title="Field Lines" data-medium="Ink on paper">
-            <button class="art__open" type="button" aria-label="View “Field Lines” enlarged">
-              <span class="art__frame">
-                <img src="assets/img/art/thumb/11.jpg" alt="Abstract ink drawing of intersecting lines, dots, and radiating bursts" width="729" height="530" loading="lazy" decoding="async">
-              </span>
-            </button>
-            <figcaption class="art__cap"><span class="art__i">15</span><span class="art__t">Field Lines</span><span class="art__m">Ink on paper</span></figcaption>
-          </figure>
+            <figure class="art reveal" data-full="assets/img/art/full/6.jpg" data-title="Club Sandwich" data-medium="Graphite on paper">
+              <button class="art__open" type="button" aria-label="View “Club Sandwich” enlarged">
+                <span class="art__frame">
+                  <img src="assets/img/art/thumb/6.jpg" alt="Detailed graphite drawing of a club sandwich on a plate" width="2660" height="1868" loading="lazy" decoding="async">
+                </span>
+              </button>
+              <figcaption class="art__cap"><span class="art__i">10</span><span class="art__t">Club Sandwich</span><span class="art__m">Graphite on paper</span></figcaption>
+            </figure>
+
+            <figure class="art reveal" data-full="assets/img/art/full/13.jpg" data-title="Violet" data-medium="Watercolor on paper">
+              <button class="art__open" type="button" aria-label="View “Violet” enlarged">
+                <span class="art__frame">
+                  <img src="assets/img/art/thumb/13.jpg" alt="Watercolor portrait with a bruised violet eye and warm skin tones" width="2962" height="3210" loading="lazy" decoding="async">
+                </span>
+              </button>
+              <figcaption class="art__cap"><span class="art__i">11</span><span class="art__t">Violet</span><span class="art__m">Watercolor on paper</span></figcaption>
+            </figure>
+
+            <figure class="art reveal" data-full="assets/img/art/full/5.jpg" data-title="Skyward" data-medium="Graphite on paper">
+              <button class="art__open" type="button" aria-label="View “Skyward” enlarged">
+                <span class="art__frame">
+                  <img src="assets/img/art/thumb/5.jpg" alt="Graphite drawing of a figure gazing upward against a backdrop of city towers" width="2617" height="3124" loading="lazy" decoding="async">
+                </span>
+              </button>
+              <figcaption class="art__cap"><span class="art__i">12</span><span class="art__t">Skyward</span><span class="art__m">Graphite on paper</span></figcaption>
+            </figure>
+
+            <figure class="art reveal" data-full="assets/img/art/full/14.jpg" data-title="Rouge" data-medium="Watercolor on paper">
+              <button class="art__open" type="button" aria-label="View “Rouge” enlarged">
+                <span class="art__frame">
+                  <img src="assets/img/art/thumb/14.jpg" alt="Watercolor portrait of a face with red lips and a hand raised to the mouth" width="2658" height="3017" loading="lazy" decoding="async">
+                </span>
+              </button>
+              <figcaption class="art__cap"><span class="art__i">13</span><span class="art__t">Rouge</span><span class="art__m">Watercolor on paper</span></figcaption>
+            </figure>
+
+            <figure class="art reveal" data-full="assets/img/art/full/9.jpg" data-title="Migration" data-medium="Ink on paper">
+              <button class="art__open" type="button" aria-label="View “Migration” enlarged">
+                <span class="art__frame">
+                  <img src="assets/img/art/thumb/9.jpg" alt="Ink drawing of a tree whose branches form the shape of a bird in flight" width="1976" height="2795" loading="lazy" decoding="async">
+                </span>
+              </button>
+              <figcaption class="art__cap"><span class="art__i">14</span><span class="art__t">Migration</span><span class="art__m">Ink on paper</span></figcaption>
+            </figure>
+
+            <figure class="art reveal" data-full="assets/img/art/full/15.jpg" data-title="Mourning" data-medium="Watercolor on paper">
+              <button class="art__open" type="button" aria-label="View “Mourning” enlarged">
+                <span class="art__frame">
+                  <img src="assets/img/art/thumb/15.jpg" alt="Watercolor face with violet tears streaming from both eyes" width="2402" height="3157" loading="lazy" decoding="async">
+                </span>
+              </button>
+              <figcaption class="art__cap"><span class="art__i">15</span><span class="art__t">Mourning</span><span class="art__m">Watercolor on paper</span></figcaption>
+            </figure>
+          </div>
         </div>
       </div>
     </section>
@@ -270,7 +263,7 @@
     <section class="contact" id="contact">
       <p class="label reveal">Contact</p>
       <h2 class="contact__title reveal">Say hello.</h2>
-      <p class="contact__line reveal">If you want to talk code, drawing, or basketball, I'm around.</p>
+      <!-- <p class="contact__line reveal">If you want to talk code, drawing, or basketball, I'm around.</p> -->
       <ul class="contact__links reveal">
         <li><a href="mailto:royxuhan@gmail.com"><span>Email</span><small>royxuhan@gmail.com</small></a></li>
         <li><a href="https://www.linkedin.com/in/royxu1029/" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span><small>in/royxu1029</small></a></li>

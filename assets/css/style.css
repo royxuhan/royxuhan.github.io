@@ -222,15 +222,13 @@ button { font: inherit; color: inherit; cursor: pointer; border: 0; background: 
 .work__title { font-family: var(--serif); font-weight: 400; font-size: clamp(2.6rem, 8vw, 5.5rem); line-height: 1; letter-spacing: -0.02em; }
 .work__sub { color: var(--muted); margin-top: 1.2rem; font-size: 1.02rem; }
 
-.gallery { max-width: var(--maxw); margin: 0 auto; display: flex; flex-direction: column; gap: clamp(3.5rem, 8vw, 7rem); }
+.gallery { max-width: var(--maxw); margin: 0 auto; display: flex; flex-direction: column; gap: clamp(3rem, 7vw, 6rem); }
 
-.pair { display: flex; gap: clamp(1.5rem, 4vw, 3rem); align-items: flex-start; }
-.pair .art { flex: 1 1 0; min-width: 0; }
-
-/* single figures centered at controlled widths */
 .art { margin: 0; width: 100%; perspective: 1100px; }
-.art--portrait { max-width: 620px; margin-inline: auto; }
-.art--wide { max-width: 100%; margin-inline: auto; }
+
+/* two height-balanced columns; no cropping, bottoms line up */
+.masonry { display: flex; gap: clamp(1.25rem, 3.5vw, 2.75rem); align-items: flex-start; }
+.masonry__col { flex: 1 1 0; min-width: 0; display: flex; flex-direction: column; gap: clamp(1.75rem, 4.5vw, 3.25rem); }
 
 /* feature = whole panorama, full-bleed edge to edge (transform-free so it doesn't clash with .reveal) */
 .art--feature { width: 100vw; max-width: 100vw; margin-left: calc(50% - 50vw); }
@@ -376,8 +374,8 @@ button { font: inherit; color: inherit; cursor: pointer; border: 0; background: 
 body.has-cursor { cursor: none; }
 body.has-cursor a, body.has-cursor button, body.has-cursor .art__open { cursor: none; }
 
-/* ---------- gallery focus dim ---------- */
-.gallery.is-focusing .art { opacity: 0.42; filter: saturate(0.6); transition: opacity 0.45s var(--ease), filter 0.45s var(--ease); }
+/* ---------- gallery focus dim (feature never dims) ---------- */
+.gallery.is-focusing .art:not(.art--feature) { opacity: 0.42; filter: saturate(0.6); transition: opacity 0.45s var(--ease), filter 0.45s var(--ease); }
 .gallery .art.is-focused { opacity: 1; filter: none; }
 
 /* ---------- magnetic links ---------- */
@@ -390,8 +388,6 @@ body.has-cursor a, body.has-cursor button, body.has-cursor .art__open { cursor: 
 /* per-piece unveil */
 .js .reveal .art__frame { clip-path: inset(0 0 100% 0); }
 .reveal.in .art__frame { clip-path: inset(0 0 -6% 0); }
-/* stagger children of pairs */
-.pair.in .art:nth-child(2), .pair.in .art:nth-child(2) .art__frame { transition-delay: 0.12s; }
 
 /* ---------- responsive ---------- */
 @media (max-width: 860px) {
@@ -400,11 +396,10 @@ body.has-cursor a, body.has-cursor button, body.has-cursor .art__open { cursor: 
   .about__photo { max-width: 340px; }
   .contact__links { grid-template-columns: 1fr; }
 }
-@media (max-width: 560px) {
+@media (max-width: 620px) {
   .nav__links { gap: 1.1rem; }
   .nav__links a { font-size: 0.72rem; letter-spacing: 0.04em; }
-  .pair { flex-direction: column; gap: clamp(3.5rem, 12vw, 5rem); }
-  .pair .art { max-width: 560px; margin-inline: auto; width: 100%; }
+  .masonry { flex-direction: column; gap: clamp(2.5rem, 9vw, 3.25rem); }
   .hero__line br { display: none; }
   .lb__nav { top: auto; bottom: 1rem; transform: none; }
   .lb__nav--prev { left: 25%; }
