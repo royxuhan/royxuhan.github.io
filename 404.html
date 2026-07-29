@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Not found — Roy Xu</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#0a0a0c">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;1,9..144,400..500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root { --bg:#0a0a0c; --ink:#f3f0ea; --muted:#9a938a; --accent:#d8b88a; }
+    * { margin:0; box-sizing:border-box; }
+    html,body { height:100%; }
+    body {
+      background: radial-gradient(120% 80% at 50% -10%, #14131a 0%, var(--bg) 55%) fixed, var(--bg);
+      color: var(--ink); font-family:"Inter",system-ui,sans-serif; font-weight:300;
+      display:grid; place-items:center; text-align:center; padding:2rem;
+      -webkit-font-smoothing:antialiased;
+    }
+    .code {
+      font-family:"Fraunces",Georgia,serif; font-weight:400; letter-spacing:-0.02em;
+      font-size:clamp(5rem,22vw,12rem); line-height:0.9;
+      background:linear-gradient(180deg,#fff,#f3f0ea 40%,#b7afa4);
+      -webkit-background-clip:text; background-clip:text; color:transparent;
+    }
+    p { color:var(--muted); margin-top:1rem; font-size:1.05rem; }
+    a {
+      display:inline-block; margin-top:2.2rem; color:var(--ink); text-decoration:none;
+      font-size:0.8rem; letter-spacing:0.22em; text-transform:uppercase; position:relative; padding-bottom:0.35rem;
+    }
+    a::after { content:""; position:absolute; left:0; bottom:0; height:1px; width:100%; background:var(--accent); transform:scaleX(0.4); transform-origin:left; transition:transform .3s ease; }
+    a:hover::after { transform:scaleX(1); }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="code">404</div>
+    <p>This one wandered off.</p>
+    <a href="/">Back to the gallery</a>
+  </main>
+</body>
+</html>

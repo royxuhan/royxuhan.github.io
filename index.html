@@ -1,207 +1,305 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="en">
-
-<!-- Index page for personal website -->
-
-<!-- head section -->
-
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-85418667-2"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Roy Xu</title>
+  <meta name="description" content="Roy Xu is a software engineer in San Francisco who draws. A small collection of graphite, charcoal, ink, and watercolor.">
+  <meta name="theme-color" content="#0a0a0c">
+  <link rel="canonical" href="https://royxuhan.github.io/">
 
-    gtag('config', 'UA-85418667-2');
-  </script>
+  <!-- Open Graph -->
+  <meta property="og:title" content="Roy Xu">
+  <meta property="og:description" content="A software engineer in San Francisco who draws. A small collection of work on paper.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://royxuhan.github.io/">
+  <meta property="og:image" content="https://royxuhan.github.io/assets/img/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
 
-  <title>Index</title>
-  <link rel="icon" href="img/logo1.jpg">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Roy Xu">
+  <meta name="twitter:description" content="A software engineer in San Francisco who draws. A small collection of work on paper.">
+  <meta name="twitter:image" content="https://royxuhan.github.io/assets/img/og.jpg">
 
-  <!-- Bootstrap CSS -->
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 
-  <!-- Optional theme -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-  <!-- Font Awesome CSS -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-
-  <!-- Google fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Josefin+Sans|Merriweather|Montserrat" rel="stylesheet">
-
-  <link rel="stylesheet" href="css/styles.css">
-
-  <meta name="description" content="Personal Site for Roy Xu">
-  <meta name="author" content="Roy Xu">
-  <meta name="keywords" content="resume, projects, software engineer, design, mobile development">
-  <meta name="copyright" content="Roy Xu 2018 and beyond...">
-
-  <title>Roy Xu // Welcome</title>
-
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
-
 <body>
-  <!-- Page Content -->
-  <div class="container">
-    <div class="modal-body row">
+  <div class="loader" aria-hidden="true"><span class="loader__mark">RX</span></div>
 
-      <!-- Top navigation -->
-      <div class="col-md-10">
-        <h1>
-          <a href="index.html">Roy Xu</a>
-          <span>// Full Stack | Web & Mobile | UI/UX Design </span>
-        </h1>
-      </div>
-
-      <div class="col-md-2" align="right">
-        <a href="projects.html"><i class="fas fa-briefcase" aria-hidden="true"></i> Projects</a>
-        <br>
-        <a href="https://www.royxuhan.com/"><i class="fas fa-palette"></i> Artwork</a>
-        <br>
-        <a href="assets/Roy Xu Resume.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Resume</a>
-        <br>
-        <a href="calendar.html"><i class="far fa-calendar-alt"></i> Calendar</a>
-        <br>
-      </div>
-
-      <div class="col-md-12">
-        <hr>
-      </div>
-
-      <img src="img/citycorner.jpg" class="bigpic" />
-
-      <hr>
-
-      <!-- About me column -->
-      <div class="col-md-8">
-        <h3>👨‍🎓 About me </h3>
-        <img class="profile" src="img/me.jpg" alt="Profile Picture" title="Roy Xu Profile Picture" />
-        <p class="intro">
-          Hi there!
-          <br>
-          <br>
-          I'm a junior at Carnegie Mellon University studying Information Systems and Human-Computer Interaction, with a minor in Computer Science as an undergraduate student. I'm currently looking for a software engineering intern position for summer 2020!
-          <br>
-          <br>
-          I have experience working with full-stack web and mobile development. I'm also interested in machine learning and UI/UX Design. This past summer, I worked as a Software Engineering Intern with GoDaddy’s Presence & Commerce team in Sunnyvale, CA! 
-          <br>
-          <br> 
-          Bringing ideas to life excites me - It is my goal to build compelling and meaningful products at scale. Currently, I am working on Cartpal, an iOS app that digitizes the brick-and-mortar shopping experience.
-          <a href="https://tinyurl.com/cartpalapp" target="_blank">Check out Cartpal here!</a>
-
-          <ul>
-            <a href="assets/Roy Xu Resume.pdf"><i class="fas fa-file-pdf"></i> Resume</a>
-            <br>
-            <a href="projects.html"><i class="fas fa-briefcase" aria-hidden="true"></i> Projects</a>
-            <li><a href="https://github.com/royxuhan" target="_blank"><i class="fab fa-github" aria-hidden="true"></i> Github</a></li>
-            <li><a href="https://www.linkedin.com/in/royxu1029/" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
-          </ul>
-      </div>
-
-      <!-- Life update -->
-      <div class="col-md-4">
-        <h3>✈️ Life update</h3>
-        <table class='lifeupdate' border='0' cellpadding='0' cellspacing='20'>
-
-          <tr>
-            <td><span class='date'> Oct 07 <br></span></td>
-            <td class="detail"> Hello World - Roy's website</td>
-          </tr>
-          <tr>
-            <td><span class='date'> Aug 27 <br></span></td>
-            <td class="detail"> First day of sophomore year!</td>
-          </tr>
-          <tr>
-            <td><span class='date'> Aug 22 <br></span></td>
-            <td class="detail"> Goodbye Philly! See you in December!</td>
-          </tr>
-          <tr>
-            <td><span class='date'> May 29 <br></span></td>
-            <td class="detail"> Hello, Da Nang! Quality family vacation time with sis, mom, and dad. <a href="assets/danang.html"> >>></a></td>
-          </tr>
-          <tr>
-            <td><span class='date'> Mar 26 <br></span></td>
-            <td class="detail"> CMU intramural basketball champion! Woohoo! <a href="assets/intramural.html"> >>></a></td>
-          </tr>
-          <tr>
-            <td><span class='date'> Mar 16 <br></span></td>
-            <td class="detail"> Goodbye LA! I will be back :) <a href="assets/springbreak2018.html"> >>></a></td>
-          </tr>
-          <tr>
-            <td><span class='date'> Jan 01 <br></span></td>
-            <td class="detail"> Hello, 2018! </td>
-          </tr>
-        </table>
-      </div>
-
-      <div class="col-md-12">
-        <hr>
-      </div>
-
-      <!-- Personal column -->
-      <div class="col-md-4">
-        <h3>🖖🏼 Personal info </h3>
-        These days, you can find me hacking on personal projects, working out in the gym, reading on my Kindle, or making fire playlists on Spotify. 
-        <br><br>
-        I also dabble in a bit of guitar and am a professional basketball player, who often merges dreams with reality.
-        <br>
-        <br>
-        <ul>
-          <li><a href="https://www.royxuhan.com/"><i class="fas fa-palette" aria-hidden="true"></i> Artwork</a></li>
-          <li><a href="https://facebook.com/royxu1029"><i class="fab fa-facebook"></i> Facebook</a></li>
-        </ul>
-      </div>
-
-      <!-- Contact column-->
-      <div class="col-md-4">
-        <h3>☎️ Contact me</h3>
-        <p>If you're interested in chatting, you can reach me at <a href="mailto:royxuhan@gmail.com" target="_blank"> royxuhan@gmail.com </a></p>
-        <p>For scheduling, you can refer to my calendar below for my availability.</p>
-        <ul>
-          <li><a href="calendar.html"><i class="far fa-calendar-alt"></i> Calendar</a></li>
-        </ul>
-      </div>
-
-      <!-- Updated row-->
-      <div class="col-md-4">
-        <h3>🔧 Last updated</h3>
-        <p>Aug 16, 2019</p>
-      </div>
-
-
-    </div>
+  <!-- ambient background -->
+  <div class="bg" aria-hidden="true">
+    <div class="bg__glow bg__glow--1"></div>
+    <div class="bg__glow bg__glow--2"></div>
+    <div class="bg__grain"></div>
   </div>
-  <hr>
 
-  <!-- footer -->
-  <footer class="footer">
-    <div>
-      <div class="socialmedia">
-        <a href="https://github.com/royxuhan" target="_blank">
-          <span class="github"> <img class="smlogo" src="img/socialicons/github.png" /></span>
-        </a>
-        <a href="https://www.facebook.com/royxu1029" target="_blank">
-          <span class="facebook"> <img class="smlogo" src="img/socialicons/facebook.png" /></span>
-        </a>
-        <a href="https://www.linkedin.com/in/royxu1029/" target="_blank">
-          <span class="linkedin"> <img class="smlogo" src="img/socialicons/linkedin.png" /> </span>
-        </a>
-        <a href="mailto:royxuhan@gmail.com" target="_blank">
-          <span class="email"> <img class="smlogo" src="img/socialicons/email.png" /> </span>
-        </a>
-        <br><br>
-        <p id=copyright> © Roy Xu | 2019 </p>
+  <div class="progress" aria-hidden="true"><span class="progress__bar"></span></div>
+
+  <a class="skip" href="#work">Skip to gallery</a>
+
+  <!-- nav -->
+  <header class="nav" id="nav">
+    <a class="nav__brand" href="#top" aria-label="Roy Xu — home">
+      <span class="nav__mark">RX</span>
+      <span class="nav__name">Roy Xu</span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- hero -->
+    <section class="hero" id="hero">
+      <canvas class="hero__canvas" aria-hidden="true"></canvas>
+      <div class="hero__inner">
+        <p class="hero__kicker">Software Engineer &nbsp;·&nbsp; San Francisco</p>
+        <h1 class="hero__name">Roy&nbsp;Xu</h1>
+        <p class="hero__line">A home for the drawings and paintings I make away from the keyboard.</p>
+      </div>
+      <a class="hero__scroll" href="#about" aria-label="Scroll to about">
+        <span class="hero__scroll-text">Scroll</span>
+        <span class="hero__scroll-line"></span>
+      </a>
+    </section>
+
+    <!-- about -->
+    <section class="about" id="about">
+      <div class="about__grid">
+        <div class="about__photo reveal">
+          <div class="about__frame">
+            <img src="assets/img/profile.jpg" alt="Portrait of Roy Xu" width="1000" height="1026" loading="lazy" decoding="async">
+          </div>
+        </div>
+        <div class="about__text">
+          <p class="label reveal">About</p>
+          <h2 class="about__title reveal">Hi, I'm Roy.</h2>
+          <p class="reveal">I'm a software engineer in San Francisco. I studied at Carnegie Mellon and have spent my career building things for the web.</p>
+          <p class="reveal">Drawing came a long time before any of that. I mostly work in graphite, charcoal, ink, and watercolor, usually with no plan and no one in mind. The pieces here are a few I held onto.</p>
+          <p class="reveal about__aside">The rest of the time I'm probably on a basketball court, or watching something science fiction.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- kinetic divider -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <div class="marquee__group">
+          <span>Graphite</span><i>·</i><span>Charcoal</span><i>·</i><span>Ink</span><i>·</i><span>Watercolor</span><i>·</i><span>Colored&nbsp;pencil</span><i>·</i><span>Oil</span><i>·</i>
+        </div>
+        <div class="marquee__group">
+          <span>Graphite</span><i>·</i><span>Charcoal</span><i>·</i><span>Ink</span><i>·</i><span>Watercolor</span><i>·</i><span>Colored&nbsp;pencil</span><i>·</i><span>Oil</span><i>·</i>
+        </div>
       </div>
     </div>
-  </footer>
-</body>
 
+    <!-- gallery -->
+    <section class="work" id="work">
+      <div class="work__head">
+        <p class="label reveal">Works on paper</p>
+        <h2 class="work__title reveal">The Gallery</h2>
+        <p class="work__sub reveal">Graphite, charcoal, ink, and watercolor. Click any piece to look closer.</p>
+      </div>
+
+      <div class="gallery">
+        <!-- 1 · feature (whole panorama, full-bleed) -->
+        <figure class="art art--feature reveal" data-full="assets/img/art/full/1.jpg" data-title="The Crossing" data-medium="Graphite on paper">
+          <button class="art__open" type="button" aria-label="View “The Crossing” enlarged">
+            <span class="art__frame">
+              <img src="assets/img/art/full/1.jpg" alt="Graphite drawing of a busy city street with pedestrians crossing among European-style buildings" width="5000" height="1756" loading="lazy" decoding="async">
+            </span>
+          </button>
+          <figcaption class="art__cap"><span class="art__i">01</span><span class="art__t">The Crossing</span><span class="art__m">Graphite on paper</span></figcaption>
+        </figure>
+
+        <!-- 2 + 3 -->
+        <div class="pair reveal">
+          <figure class="art" data-full="assets/img/art/full/2.jpg" data-title="Elder" data-medium="Charcoal on paper">
+            <button class="art__open" type="button" aria-label="View “Elder” enlarged">
+              <span class="art__frame">
+                <img src="assets/img/art/thumb/2.jpg" alt="Charcoal portrait of an older woman with weathered features and long hair" width="1872" height="2376" loading="lazy" decoding="async">
+              </span>
+            </button>
+            <figcaption class="art__cap"><span class="art__i">02</span><span class="art__t">Elder</span><span class="art__m">Charcoal on paper</span></figcaption>
+          </figure>
+          <figure class="art" data-full="assets/img/art/full/3.jpg" data-title="Roses &amp; Fruit" data-medium="Oil on paper">
+            <button class="art__open" type="button" aria-label="View “Roses and Fruit” enlarged">
+              <span class="art__frame">
+                <img src="assets/img/art/thumb/3.jpg" alt="Vibrant still-life painting of roses, fruit, and a glass of wine on a bright tablecloth" width="1941" height="2849" loading="lazy" decoding="async">
+              </span>
+            </button>
+            <figcaption class="art__cap"><span class="art__i">03</span><span class="art__t">Roses &amp; Fruit</span><span class="art__m">Oil on paper</span></figcaption>
+          </figure>
+        </div>
+
+        <!-- 5 -->
+        <figure class="art art--portrait reveal" data-full="assets/img/art/full/5.jpg" data-title="Skyward" data-medium="Graphite on paper">
+          <button class="art__open" type="button" aria-label="View “Skyward” enlarged">
+            <span class="art__frame">
+              <img src="assets/img/art/thumb/5.jpg" alt="Graphite drawing of a figure gazing upward against a backdrop of city towers" width="2617" height="3124" loading="lazy" decoding="async">
+            </span>
+          </button>
+          <figcaption class="art__cap"><span class="art__i">04</span><span class="art__t">Skyward</span><span class="art__m">Graphite on paper</span></figcaption>
+        </figure>
+
+        <!-- 7 -->
+        <figure class="art art--wide reveal" data-full="assets/img/art/full/7.jpg" data-title="Slice" data-medium="Colored pencil on paper">
+          <button class="art__open" type="button" aria-label="View “Slice” enlarged">
+            <span class="art__frame">
+              <img src="assets/img/art/thumb/7.jpg" alt="Colored-pencil drawing of a loaded pizza with one slice pulled away" width="2634" height="1890" loading="lazy" decoding="async">
+            </span>
+          </button>
+          <figcaption class="art__cap"><span class="art__i">05</span><span class="art__t">Slice</span><span class="art__m">Colored pencil on paper</span></figcaption>
+        </figure>
+
+        <!-- 12 + 13 -->
+        <div class="pair reveal">
+          <figure class="art" data-full="assets/img/art/full/12.jpg" data-title="Dissolve" data-medium="Watercolor on paper">
+            <button class="art__open" type="button" aria-label="View “Dissolve” enlarged">
+              <span class="art__frame">
+                <img src="assets/img/art/thumb/12.jpg" alt="Expressive watercolor face with dripping blue, purple, and yellow pigment" width="2757" height="3471" loading="lazy" decoding="async">
+              </span>
+            </button>
+            <figcaption class="art__cap"><span class="art__i">06</span><span class="art__t">Dissolve</span><span class="art__m">Watercolor on paper</span></figcaption>
+          </figure>
+          <figure class="art" data-full="assets/img/art/full/13.jpg" data-title="Violet" data-medium="Watercolor on paper">
+            <button class="art__open" type="button" aria-label="View “Violet” enlarged">
+              <span class="art__frame">
+                <img src="assets/img/art/thumb/13.jpg" alt="Watercolor portrait with a bruised violet eye and warm skin tones" width="2962" height="3210" loading="lazy" decoding="async">
+              </span>
+            </button>
+            <figcaption class="art__cap"><span class="art__i">07</span><span class="art__t">Violet</span><span class="art__m">Watercolor on paper</span></figcaption>
+          </figure>
+        </div>
+
+        <!-- 10 -->
+        <figure class="art art--portrait reveal" data-full="assets/img/art/full/10.jpg" data-title="Rooted" data-medium="Ink on paper">
+          <button class="art__open" type="button" aria-label="View “Rooted” enlarged">
+            <span class="art__frame">
+              <img src="assets/img/art/thumb/10.jpg" alt="Ink drawing of a person's silhouette filled with bare branches" width="1798" height="2653" loading="lazy" decoding="async">
+            </span>
+          </button>
+          <figcaption class="art__cap"><span class="art__i">08</span><span class="art__t">Rooted</span><span class="art__m">Ink on paper</span></figcaption>
+        </figure>
+
+        <!-- 6 -->
+        <figure class="art art--wide reveal" data-full="assets/img/art/full/6.jpg" data-title="Club Sandwich" data-medium="Graphite on paper">
+          <button class="art__open" type="button" aria-label="View “Club Sandwich” enlarged">
+            <span class="art__frame">
+              <img src="assets/img/art/thumb/6.jpg" alt="Detailed graphite drawing of a club sandwich on a plate" width="2660" height="1868" loading="lazy" decoding="async">
+            </span>
+          </button>
+          <figcaption class="art__cap"><span class="art__i">09</span><span class="art__t">Club Sandwich</span><span class="art__m">Graphite on paper</span></figcaption>
+        </figure>
+
+        <!-- 4 + 9 -->
+        <div class="pair reveal">
+          <figure class="art" data-full="assets/img/art/full/4.jpg" data-title="Teapot" data-medium="Graphite on paper">
+            <button class="art__open" type="button" aria-label="View “Teapot” enlarged">
+              <span class="art__frame">
+                <img src="assets/img/art/thumb/4.jpg" alt="Graphite still life of a ceramic teapot resting on draped cloth" width="2234" height="3161" loading="lazy" decoding="async">
+              </span>
+            </button>
+            <figcaption class="art__cap"><span class="art__i">10</span><span class="art__t">Teapot</span><span class="art__m">Graphite on paper</span></figcaption>
+          </figure>
+          <figure class="art" data-full="assets/img/art/full/9.jpg" data-title="Migration" data-medium="Ink on paper">
+            <button class="art__open" type="button" aria-label="View “Migration” enlarged">
+              <span class="art__frame">
+                <img src="assets/img/art/thumb/9.jpg" alt="Ink drawing of a tree whose branches form the shape of a bird in flight" width="1976" height="2795" loading="lazy" decoding="async">
+              </span>
+            </button>
+            <figcaption class="art__cap"><span class="art__i">11</span><span class="art__t">Migration</span><span class="art__m">Ink on paper</span></figcaption>
+          </figure>
+        </div>
+
+        <!-- 14 + 15 -->
+        <div class="pair reveal">
+          <figure class="art" data-full="assets/img/art/full/14.jpg" data-title="Mourning" data-medium="Watercolor on paper">
+            <button class="art__open" type="button" aria-label="View “Mourning” enlarged">
+              <span class="art__frame">
+                <img src="assets/img/art/thumb/14.jpg" alt="Watercolor face with violet tears streaming from both eyes" width="2658" height="3017" loading="lazy" decoding="async">
+              </span>
+            </button>
+            <figcaption class="art__cap"><span class="art__i">12</span><span class="art__t">Mourning</span><span class="art__m">Watercolor on paper</span></figcaption>
+          </figure>
+          <figure class="art" data-full="assets/img/art/full/15.jpg" data-title="Wildcard" data-medium="Colored pencil &amp; ink on paper">
+            <button class="art__open" type="button" aria-label="View “Wildcard” enlarged">
+              <span class="art__frame">
+                <img src="assets/img/art/thumb/15.jpg" alt="Colorful abstract collage with a cubist face, a joker card, and geometric shapes" width="2402" height="3157" loading="lazy" decoding="async">
+              </span>
+            </button>
+            <figcaption class="art__cap"><span class="art__i">13</span><span class="art__t">Wildcard</span><span class="art__m">Colored pencil &amp; ink on paper</span></figcaption>
+          </figure>
+        </div>
+
+        <!-- 8 + 11 -->
+        <div class="pair reveal">
+          <figure class="art" data-full="assets/img/art/full/8.jpg" data-title="Rouge" data-medium="Watercolor on paper">
+            <button class="art__open" type="button" aria-label="View “Rouge” enlarged">
+              <span class="art__frame">
+                <img src="assets/img/art/thumb/8.jpg" alt="Watercolor portrait of a face with red lips and a hand raised to the mouth" width="842" height="1018" loading="lazy" decoding="async">
+              </span>
+            </button>
+            <figcaption class="art__cap"><span class="art__i">14</span><span class="art__t">Rouge</span><span class="art__m">Watercolor on paper</span></figcaption>
+          </figure>
+          <figure class="art" data-full="assets/img/art/full/11.jpg" data-title="Field Lines" data-medium="Ink on paper">
+            <button class="art__open" type="button" aria-label="View “Field Lines” enlarged">
+              <span class="art__frame">
+                <img src="assets/img/art/thumb/11.jpg" alt="Abstract ink drawing of intersecting lines, dots, and radiating bursts" width="729" height="530" loading="lazy" decoding="async">
+              </span>
+            </button>
+            <figcaption class="art__cap"><span class="art__i">15</span><span class="art__t">Field Lines</span><span class="art__m">Ink on paper</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact -->
+    <section class="contact" id="contact">
+      <p class="label reveal">Contact</p>
+      <h2 class="contact__title reveal">Say hello.</h2>
+      <p class="contact__line reveal">If you want to talk code, drawing, or basketball, I'm around.</p>
+      <ul class="contact__links reveal">
+        <li><a href="mailto:royxuhan@gmail.com"><span>Email</span><small>royxuhan@gmail.com</small></a></li>
+        <li><a href="https://www.linkedin.com/in/royxu1029/" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span><small>in/royxu1029</small></a></li>
+        <li><a href="https://github.com/royxuhan" target="_blank" rel="noopener noreferrer"><span>GitHub</span><small>@royxuhan</small></a></li>
+        <li><a href="https://instagram.com/royhxu" target="_blank" rel="noopener noreferrer"><span>Instagram</span><small>@royhxu</small></a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <span>© <span id="year">2026</span> Roy Xu</span>
+    <a class="foot__top" href="#top">Back to top ↑</a>
+  </footer>
+
+  <!-- lightbox -->
+  <div class="lb" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Artwork viewer">
+    <button class="lb__close" type="button" aria-label="Close viewer">✕</button>
+    <button class="lb__nav lb__nav--prev" type="button" aria-label="Previous work">‹</button>
+    <button class="lb__nav lb__nav--next" type="button" aria-label="Next work">›</button>
+    <figure class="lb__stage">
+      <img class="lb__img" src="" alt="">
+      <figcaption class="lb__cap"><span class="lb__t"></span><span class="lb__m"></span><span class="lb__count"></span><span class="lb__hint">click image to zoom</span></figcaption>
+    </figure>
+  </div>
+
+  <!-- custom cursor -->
+  <div class="cursor-ring" aria-hidden="true"><span class="cursor-label">View</span></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
 </html>
