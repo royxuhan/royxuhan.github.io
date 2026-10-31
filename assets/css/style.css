@@ -394,7 +394,7 @@ button { font: inherit; color: inherit; cursor: pointer; border: 0; background: 
 }
 .index__preview.is-on { opacity: 1; }
 .index__preview img {
-  position: absolute; top: 0; left: 0; width: 100%; height: auto; border-radius: 3px;
+  position: absolute; top: 50%; left: 50%; border-radius: 3px;
   box-shadow: 0 30px 80px -20px rgba(0,0,0,0.85), 0 0 80px -20px color-mix(in oklab, var(--tone) 55%, transparent);
 }
 

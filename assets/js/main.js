@@ -1127,13 +1127,22 @@
       pw = Math.min(560, Math.sqrt(area * ratio)); ph = pw / ratio;
       preview.style.width = pw + "px";
       preview.style.height = ph + "px";
+      // the outgoing piece fades away under the incoming one, then leaves the DOM
+      Array.prototype.forEach.call(preview.children, function (old) {
+        if (old.classList.contains("is-leaving")) return;
+        old.classList.add("is-leaving");
+        if (!old.animate || reduce || !previewOn) { old.remove(); return; }
+        old.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 280, easing: "ease-out", fill: "forwards" }).onfinish = function () { old.remove(); };
+      });
       var img = document.createElement("img");
       img.alt = ""; img.decoding = "async"; img.src = row.src;
+      img.style.width = pw + "px";
+      img.style.height = ph + "px";
+      img.style.margin = (-ph / 2) + "px 0 0 " + (-pw / 2) + "px";
       preview.appendChild(img);
       if (img.animate && !reduce) {
         img.animate([{ clipPath: "inset(100% 0 0 0)", transform: "scale(1.12)" }, { clipPath: "inset(0 0 0 0)", transform: "none" }], { duration: 650, easing: EASE });
       }
-      while (preview.children.length > 2) preview.removeChild(preview.firstElementChild);
       if (!previewOn) { px = tx; py = ty; }
       previewOn = true;
       preview.classList.add("is-on");
